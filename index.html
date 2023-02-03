@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de biens immobiliers en Mayenne">
+    <title>Quarter</title>
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
+    <script src="dist/app.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="bg-primary">
+            <div class="container top-bar">
+                <div class="top-bar-contact">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:contact@quarter.com">
+                        contact@quarter.com
+                    </a>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:0123456789">
+                        0123456789
+                    </a>
+                </div>
+                <ul class="social-networks">
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sticky-bar">
+        <div class="container">
+            <img src="images/logo.png" alt="Quarter">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="properties.html">Propriétés</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Catégories</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="apartments.html">Appartements</a>
+                            </li>
+                            <li>
+                                <a href="houses.html">Maisons</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-show-fav" class="btn btn-secondary">
+                            <i class="fa fa-eye"></i>
+                            Voir favoris
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section-homepage">
+        <div class="section-homepage-content">
+            <h2>
+                <i class="fa fa-home"></i>
+                Real Estate Agent
+            </h2>
+            <h1>
+                Find your dream
+                <br>
+                house by us
+            </h1>
+        </div>
+    </section>
+
+    <section class="section-search">
+        <div class="container">
+            <form>
+                <select name="area">
+                    <option>Choisissez une ville</option>
+                    <option value="laval">Laval</option>
+                    <option value="rennes">Rennes</option>
+                </select>
+                <select name="status">
+                    <option>Choisissez un statut</option>
+                    <option value="achat">Achat</option>
+                    <option value="location">Location</option>
+                </select>
+                <select name="type">
+                    <option>Choisissez un type</option>
+                    <option value="maison">Maison</option>
+                    <option value="appartement">Appartement</option>
+                </select>
+                <button type="submit" class="btn btn-secondary">
+                    <i class="fa fa-search"></i>
+                    Rechercher
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Catégories</span>
+        <h2>Liste des Catégories</h2>
+
+        <div class="container">
+            <div class="list-categories">
+                <article>
+                    <a href="#">
+                        <img src="images/category-apartments.jpg" alt="Appartements">
+                        <div class="overlay">
+                            <h3>Appartements</h3>
+                            <span class="badge badge-secondary">
+                                15 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-condos.jpg" alt="Copropriétés">
+                        <div class="overlay">
+                            <h3>Copropriétés</h3>
+                            <span class="badge badge-secondary">
+                                4 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-houses.jpg" alt="Maisons">
+                        <div class="overlay">
+                            <h3>Maisons</h3>
+                            <span class="badge badge-secondary">
+                                42 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-villas.jpg" alt="Villas">
+                        <div class="overlay">
+                            <h3>Villas</h3>
+                            <span class="badge badge-secondary">
+                                6 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Propriétés</span>
+        <h2>Propriétés mises en avant</h2>
+
+        <div class="container">
+            <div class="list-properties">
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                        <img src="images/liste-maison.jpg" alt="Maison avec vue">
+                        </a>
+                        <div class="badge badge-success">A Louer</div>
+                        <div class="header-info">   
+                            <div class="fa fa-map-marker">
+                                Laval
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera">
+                                        4    
+                                    </i>
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye">
+                                        9
+                                    </i>
+                                </div>
+                            </div> 
+                        </div> 
+                    </header>
+                    <main>
+                        <div class="property-card-content">
+                            <div class="property-price">
+                                800 €<span class="property-price-duration">/mois</span>
+                            </div>
+                            <h3>Superbe Maison avec vue</h3>
+                            <p>
+                                Magnifique maison familiale au coeur du vieux Laval. Récemment rénovée avec goût.
+                            </p>
+                            <ul class="property-card-features">
+                                <li>
+                                    <span class="feature-value">3 </span><i class="fa fa-bed"></i> 
+                                    <div>Chambres</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">2 </span><i class="fa fa-bath"></i> 
+                                    <div>Salles de Bain</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">380 </span><i class="fa fa-arrows-alt"></i> 
+                                    <div>Mètres Carrés</div> 
+                                </li>
+                            </ul>
+                        </div>        
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/author.jpg" alt="John DOE">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent Immobilier</span>
+                            </div>
+                        </address>
+                        <ul >
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>              
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                        <img src="images/liste-appartement.jpg" alt="Appartement de standing">
+                        </a>
+                        <div class="badge badge-warning">A Vendre</div>
+                        <div class="header-info">   
+                            <div class="fa fa-map-marker">
+                                Nantes
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera">
+                                        14    
+                                    </i>
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye">
+                                        90
+                                    </i>
+                                </div>
+                            </div> 
+                        </div> 
+                    </header>
+                    <main>
+                        <div class="property-card-content">
+                            <div class="property-price">
+                                460 000 €
+                            </div>
+                            <h3>Appartement de Standing en Triplex</h3>
+                            <p>
+                                Un appartement de folie au coeur de la cité, décorationaussi raffiné que luxueux, à découvrir !
+                            </p>
+                            <ul class="property-card-features">
+                                <li>
+                                    <span class="feature-value">2 </span><i class="fa fa-bed"></i> 
+                                    <div>Chambres</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">1 </span><i class="fa fa-bath"></i> 
+                                    <div>Salle de Bain</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">78 </span><i class="fa fa-arrows-alt"></i> 
+                                    <div>Mètres Carrés</div> 
+                                </li>
+                            </ul>
+                        </div>        
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/author.jpg" alt="John DOE">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent Immobilier</span>
+                            </div>
+                        </address>
+                        <ul >
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>                
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                        <img src="images/liste-maison3.jpg" alt="Maison avec escalier">
+                        </a>
+                        <div class="badge badge-success">A Louer</div>
+                        <div class="header-info">   
+                            <div class="fa fa-map-marker">
+                                Neaux
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera">
+                                        8   
+                                    </i>
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye">
+                                        58
+                                    </i>
+                                </div>
+                            </div> 
+                        </div> 
+                    </header>
+                    <main>
+                        <div class="property-card-content">
+                            <div class="property-price">
+                                925 €<span class="property-price-duration">/mois</span>
+                            </div>
+                            <h3>Maison de Campagne </h3>
+                            <p>
+                                Grande maison autour de rien, avec un authentique escalier alliant, avec élégance, le bois et le blanc...
+                            </p>
+                            <ul class="property-card-features">
+                                <li>
+                                    <span class="feature-value">5 </span><i class="fa fa-bed"></i> 
+                                    <div>Chambres</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">3 </span><i class="fa fa-bath"></i> 
+                                    <div>Salles de Bain</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">250 </span><i class="fa fa-arrows-alt"></i> 
+                                    <div>Mètres Carrés</div> 
+                                </li>
+                            </ul>
+                        </div>        
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/author.jpg" alt="John DOE">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent Immobilier</span>
+                            </div>
+                        </address>
+                        <ul >
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                        <img src="images/liste-projet.jpg" alt="Maison sur Plan">
+                        </a>
+                        <div class="badge badge-warning">A Vendre</div>
+                        <div class="header-info">   
+                            <div class="fa fa-map-marker">
+                                Laval
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera">
+                                        6    
+                                    </i>
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye">
+                                        15
+                                    </i>
+                                </div>
+                            </div> 
+                        </div> 
+                    </header>
+                    <main>
+                        <div class="property-card-content">
+                            <div class="property-price">
+                                95000 €
+                            </div>
+                            <h3>Plan de maison en 3D</h3>
+                            <p>
+                                Maison sur plan avec deux murs, huisseries de qualités irréprochable. En bonus, un canapé trois places !
+                            </p>
+                            <ul class="property-card-features">
+                                <li>
+                                    <span class="feature-value">3 </span><i class="fa fa-bed"></i> 
+                                    <div>Chambres</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">2 </span><i class="fa fa-bath"></i> 
+                                    <div>Salles de Bain</div>
+                                </li>
+                                <li>
+                                    <span class="feature-value">110 </span><i class="fa fa-arrows-alt"></i> 
+                                    <div>Mètres Carrés</div> 
+                                </li>
+                            </ul>
+                        </div>        
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/author.jpg" alt="John DOE">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent Immobilier</span>
+                            </div>
+                        </address>
+                        <ul >
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+        </div>     
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Nos Equipements</span>
+            <h2>Aménagement des Copropriétés</h2>
+
+        <article class="aminities-list">
+            <a href="#" class="category-item">    
+                <div class="fa fa-car"></div>
+                <span class="category-title"><h3>Place de Parking</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+            
+            <a href="#" class="category-item">    
+                <div class="fa fa-bath"></div>
+                <span class="category-title"><h3>Piscine</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-expeditedssl"></div>
+                <span class="category-title"><h3>Sécurité Privée</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-stethoscope"></div>
+                <span class="category-title"><h3>Centre Médical</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-book"></div>
+                <span class="category-title"><h3>Bibliothèque</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-bed"></div>
+                <span class="category-title"><h3>Lits "King Size"</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-home"></div>
+                <span class="category-title"><h3>Maisons Connectées</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">    
+                <div class="fa fa-hospital-o"></div>
+                <span class="category-title"><h3>Aire de jeux</h3></span>
+                <i class="fa fa-long-arrow-right"></i>
+            </a>
+        </article>        
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Actu & Blog</span>
+            <h2>Actus du moment</h2>
+
+        <div class="container">
+            <div class="list-news">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <a href="#">
+                            <img src="images/liste-maison3.jpg" alt="Décorations">
+                        </a>
+                    </div>
+                    <main class="news-card-main">
+                        <div class="news-card-features">
+                            <ul>
+                                <li class="author">
+                                    <a href="#">
+                                        <i class="fa fa-user-o"></i>
+                                        Par : Admin
+                                    </a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">
+                                        <i class="fa fa-tags"></i>
+                                        Décoration
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="news-card-title">
+                            <h3>
+                                <a href="#">10 Façons d'aménager votre maison</a>
+                            </h3>
+                        </div>
+                        <div class="news-card-footer">
+                            <time class="fa fa-calendar">
+                                <i class="date">13 Novembre 2022</i>
+                            </time>
+                            
+                            <a class="more-info">En Savoir plus</a>
+                        </div>
+                    </main>    
+                </article>
+
+                <article class="news-card">    
+                    <div class="news-card-header">
+                        <a href="#">
+                            <img src="images/liste-appartement.jpg" alt="décoration intérieur">
+                        </a>
+                    </div>
+                    <main class="news-card-main">
+                        <div class="news-card-features">
+                            <ul>
+                                <li class="author">
+                                    <a href="#">
+                                        <i class="fa fa-user-o"></i>
+                                        Par : Admin
+                                    </a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">
+                                        <i class="fa fa-tags"></i>
+                                        Intérieur
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="news-card-title">
+                            <h3>
+                                <a href="#">Les Tendances Déco de l'Année 2023</a>
+                            </h3>
+                        </div>                         
+                        <div class="news-card-footer">
+                            <time class="fa fa-calendar">
+                                <i class="date">3 janvier 2023</i>
+                            </time>
+                                
+                            <a href="#" class="more-info">En Savoir plus</a>
+                        </div>
+                    </main>    
+                </article>
+
+                <article class="news-card">   
+                    <div class="news-card-header">
+                        <a href="#">
+                            <img src="images/news-maison-coloniale.jpg" alt="Maison coloniale">
+                        </a>
+                    </div>
+                    <main class="news-card-main">
+                        <div class="news-card-features">
+                            <ul>
+                                <li class="author">
+                                    <a href="#">
+                                        <i class="fa fa-user-o"></i>
+                                        Par : Admin
+                                    </a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#" >
+                                        <i class="fa fa-tags"></i>
+                                        Immobilier
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="news-card-title">
+                            <h3>
+                                <a href="#">Dernières transactions de  notre Agence</a>
+                            </h3>
+                        </div>
+                        <div class="news-card-footer">
+                            <time class="fa fa-calendar">
+                                <i class="date">15 janvier 2023</i>
+                            </time>
+                                                            
+                            <a href="#" class="more-info">En Savoir plus</a>
+                        </div>
+                    </main>         
+                </article>
+
+            </div>    
+        </div>
+    </section>
+
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+<footer class="footer-area" >
+    <div class="footer-top-area bg-footer">
+        <div class="footer-contact-us">
+            <div class="footer-contact-descrition">
+                <img src="/images/logo-2.png" alt="Quarter">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur blanditiis. Malheureusement, on va aux noisettes. 
+                </p>
+            </div>
+            <ul class="footer-contact-shortcut">
+                <li class="fa fa-map-marker">
+                    <a href="https://www.google.com/maps/place/35+Bd+Cl%C3%A9ment+Ader,+53000+Laval">
+                        35, Boulevard Clément Ader, Laval
+                    </a>
+                </li>
+                <li class="fa fa-volume-control-phone">
+                    <a href="tel:+0123456789">
+                        01 23 45 67 89
+                    </a>
+                </li>
+                <li class="fa fa-envelope-o">
+                    <a href="mailto:example@example.com">
+                        example@example.com
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-social-networks">
+                <ul class="social-networks">
+                    <li>
+                        <a href="https://www.facebook.com">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>    
+                        <a href="https://www.twitter.com">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="https://www.linkedin.com">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="footer-com-ser-cus">
+            <li class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">All Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Location Map</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="services">
+                <h3>Services</h3>
+                <ul>
+                    <li>
+                        <a href="#">Order tracking</a>
+                    </li>
+                    <li>
+                        <a href="#">Whish List</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">My account</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Promotional Offers</a>
+                    </li>
+                </ul> 
+            </li>
+            <li class="customer-care">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">My Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Wish List</a>
+                    </li>
+                    <li>
+                        <a href="#">Order tracking</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="last-menu">
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>
+                    Subscribe to our weekly Newsletter and receive updates via email.
+                </p>
+                <form action="email" class="form-button">
+                    <input type="email" name="newsletter" placeholder="Email*" class="email">
+                    <button class="send">
+                        <i class="fa fa-location-arrow"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="money">
+                <h3>We accept</h3>
+                <i><img src="/images/payment-4.png" alt="Moyens de Paiements"></i>
+            </div>
+        </div>       
+    </div>
+    <div class="footer-bottom-area bg-primary">
+        <div class="copyright">
+            All Rights Reserved @Company 2023
+        </div>
+        <div class="copyright-menu">
+            <ul>
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Claim</a>
+                </li>
+                <li>
+                    <a href="#">Privacy & Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</footer>
+</html>

@@ -1,0 +1,56 @@
+@use '../utils/variables';
+
+.section-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section-homepage-content {
+        color: white;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: white;
+            font-size: 1rem;
+        }
+    }
+}
+
+.section-search {
+    margin-top: -75px;
+
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding: 3rem 0;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        select {
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-desktop) {
+
+}
+
+@media screen and (max-width: variables.$breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: variables.$breakpoint-smartphone) {
+
+}

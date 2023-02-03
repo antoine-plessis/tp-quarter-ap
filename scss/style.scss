@@ -1,0 +1,23 @@
+@use 'normalize.css/normalize';
+
+@use 'base/backgrounds';
+@use 'base/typography';
+
+@use 'components/aminities';
+@use 'components/back-to-top';
+@use 'components/badges';
+@use 'components/buttons';
+@use 'components/categories-list';
+@use 'components/newsfeeds';
+@use 'components/property-cards';
+@use 'components/social-networks';
+
+@use 'layout/containers';
+@use 'layout/footers';
+@use 'layout/headers';
+@use 'layout/sections';
+
+@use 'pages/home';
+
+$fa-font-path: '~fontawesome-4.7/fonts';
+@import '~fontawesome-4.7/scss/font-awesome';

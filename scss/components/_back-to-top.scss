@@ -1,0 +1,25 @@
+@use '../utils/variables';
+
+.back-to-top {
+    position: fixed;
+    bottom: 4.2rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: rotate(45deg);
+
+    &:hover {
+        color: white;
+        background-color: variables.$color-secondary;
+    }
+
+    .fa {
+        font-size: 2rem;
+        transform: rotate(-45deg);
+    }
+}

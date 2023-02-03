@@ -1,0 +1,69 @@
+@use '../utils/variables';
+
+.list-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
+    gap: 2rem;
+
+    article {
+        position: relative; /* Pour que le overlay soit en absolute par rapport à l'article */
+
+        &:first-child {
+            grid-column-start: span 2;
+        }
+
+        &:hover {
+            img {
+                filter: brightness(90%);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(70%);
+            transition: filter 0.5s;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-desktop) {
+    .section-search {
+        form {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-tablet) {
+    .list-categories {
+        grid-template-columns: repeat(2, 1fr);
+
+        article {
+            &:first-child {
+                grid-column-start: span 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-smartphone) {
+    .list-categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

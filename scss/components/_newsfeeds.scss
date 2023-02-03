@@ -1,0 +1,118 @@
+@use '../utils/variables';
+
+.list-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+    
+    
+
+    .news-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+               
+        &:hover {
+            .news-card-header {
+                img {
+                transform: scale(1.1);
+                }    
+            }
+        }
+        
+        .news-card-header {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(70%);
+                transition: transform 0.5s; 
+            }
+        }
+
+        .news-card-main {
+            padding: 2rem;
+            
+            .author .tag .date {
+                color: rgb(92 114 125);
+            }
+            
+
+            .fa {
+                color: variables.$color-secondary;
+                margin-right: 0.25rem;
+            }            
+            
+
+            .news-card-features {
+                .author {
+                    margin-right: 2rem;;
+                }
+                
+                                   
+                ul {
+                    list-style-type: none;
+                    margin-top: 0rem;
+                    padding-left: 0rem;
+
+                    li {
+                        display: inline-block;
+                        position: relative;
+                    }
+
+
+
+                    a {
+                        color: variables.$color-newsfeed;
+
+                        &:hover {
+                            color: variables.$color-secondary;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .news-card-title {
+                display: flex;
+                font-size: 1.3rem;
+                font-weight: bolder;
+                border-bottom: 1px lightgray solid;
+            }
+
+            .news-card-footer {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1rem;
+                
+                .date {
+                    font-family: 'Roboto', sans-serif;
+                    color: variables.$color-newsfeed;
+                }
+                
+
+                .more-info {
+                    text-transform: uppercase;
+                    color: variables.$color-secondary;
+                }
+
+            }
+        }    
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-desktop) {
+
+}
+
+@media screen and (max-width: variables.$breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: variables.$breakpoint-smartphone) {
+
+}

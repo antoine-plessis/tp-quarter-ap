@@ -1,0 +1,73 @@
+@use '../utils/variables';
+
+.aminities-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    
+
+    .category-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+        border: none;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border-radius: 25px;
+        margin-bottom: 2rem;
+
+
+        &:hover {
+            background-color: variables.$color-secondary;
+            color: white;
+        }
+
+        .fa {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff2f0;
+            color: variables.$color-secondary;
+            border-radius: 100%;
+            font-size: 3rem;
+            height: 100px;
+            width: 100px;
+
+            &.fa-long-arrow-right {
+                font-size: 2rem;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                bottom: -1.5rem;
+                margin-top: 2rem;
+            }
+
+            .category-title {
+                margin: 3rem 1rem 3rem 1rem;
+            }
+        }    
+
+    }   
+}
+
+@media screen and (max-width: variables.$breakpoint-desktop) {
+    .aminities-list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-tablet) {
+    .aminities-list {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-smartphone) {
+    .aminities-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
