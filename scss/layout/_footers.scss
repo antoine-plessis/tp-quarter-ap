@@ -6,30 +6,26 @@
         padding: 6rem 3rem 6rem 3rem;
 
         h3 {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
+            font-weight: bolder;
         }
-    
+        
         .footer-contact-us {
             display: flex;
             flex: 1 1 0;
             flex-direction: column;
             justify-content: space-between;
             padding: 0rem;
-            margin-right: 2rem;
-
+            margin-right: 2rem;  
+            padding-right: 2rem;
+        
             .footer-contact-shortcut {
                 display: flex;
                 flex-direction: column;
-                margin: 0rem;
-                padding: 0rem;
-                gap: 1.5rem; 
-
-                .fa {
-                    display: flex;
-                    gap: 1rem;
-
-                }
-            }          
+                font-size: 1.1rem;
+                gap: 1rem;
+                padding-left: 0rem;          
+            }
         }
 
         .footer-com-ser-cus {
@@ -39,15 +35,13 @@
             margin-top: 0rem;
             margin-bottom: 0rem;
             padding: 0rem;
-            
-
+           
             li {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                margin-right: 3.5rem;;
-                
-            
+                margin-right: 3.5rem;
+
                 ul {
                     display: flex;
                     flex-direction: column;
@@ -59,23 +53,20 @@
                         gap: 5rem;
                     }
                 }
-            }
-
-
-           
-            
+            }            
         }
 
         .last-menu {
             display: flex;
             flex-direction: column;
             flex: 1 1 0;
+ 
             .newsletter {
                 .form-button {
                     display: flex;
                     align-items: center;
+ 
                     .email {
-                    
                         height: 3.5rem;
                         width: 19rem;
                         padding: 0rem;
@@ -99,7 +90,6 @@
                             background-color: variables.$color-secondary;
                             color: white;
                             transition: 0.5s;
-                            
 
                             &:hover {
                                 background-color: variables.$color-primary;
@@ -108,9 +98,9 @@
                     }        
                 }    
             }
-        }
-        .money {
-            margin-top: 2rem;
+            .money {
+                margin-top: 2rem;
+            }    
         }
     }
 
@@ -123,10 +113,34 @@
         ul {
             display: flex;
             gap: 2rem;
-            list-style-type: none;
-            
-            
+            list-style-type: none;        
         }
     }
 }
 
+@media screen and (max-width: variables.$breakpoint-desktop) {
+    .footer-top-area {
+        display: flex;
+        flex-direction: column;
+             
+        .footer-contact-shortcut {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-tablet) {  
+    .footer-bottom-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: variables.$breakpoint-smartphone) {  
+    .footer-com-ser-cus {
+        flex-direction: column;
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+}
